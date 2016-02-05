@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="768.0" minWidth="1366.0" prefHeight="768.0" prefWidth="1366.0" stylesheets="@../css/principal.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.gob.onpe.eva.seleccion.view.controller.PuestaCeroController">
+    <children>
+        <VBox prefHeight="721.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="2000.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <AnchorPane prefHeight="2000.0" prefWidth="1000.0" styleClass="apPuestaCeroIzq" AnchorPane.rightAnchor="0.0">
+                            <children>
+                                <AnchorPane fx:id="apCargaLeft" layoutY="742.0" prefHeight="65.0" prefWidth="65.0" styleClass="apFooterPuestaCero" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane maxWidth="1150.0" minWidth="1150.0" prefHeight="200.0" prefWidth="1150.0" styleClass="apPuestaCeroCentral">
+                            <children>
+                                <AnchorPane fx:id="apCargaBarra" layoutX="97.0" layoutY="370.0" prefHeight="94.0" prefWidth="0.0" styleClass="apProgress" />
+                                <AnchorPane fx:id="apCarga" layoutX="33.0" layoutY="281.0" prefHeight="89.0" prefWidth="130.0" styleClass="apCountCarga">
+                                    <children>
+                                        <Label fx:id="lblCarga" alignment="CENTER" layoutX="19.0" layoutY="7.0" prefHeight="49.0" prefWidth="92.0" styleClass="lblCarga" text="0%" textAlignment="CENTER" />
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane fx:id="apCargaMid" layoutX="14.0" layoutY="600.0" prefHeight="65.0" prefWidth="200.0" styleClass="apFooterPuestaCero" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                    <children>
+                                        <Label alignment="CENTER_RIGHT" layoutX="1.0" layoutY="11.0" prefHeight="42.0" prefWidth="1127.0" styleClass="lblCarga,lblFooterCarga" text="Puesta a Cero Completado" textAlignment="RIGHT" AnchorPane.bottomAnchor="12.0" />
+                                    </children>
+                                </AnchorPane>
+                                <Label layoutX="33.0" layoutY="76.0" prefHeight="74.0" prefWidth="411.0" styleClass="lblTitulo_pcero" text="PUESTA A CERO" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="1000.0" styleClass="apPuestaCeroDer" AnchorPane.leftAnchor="0.0">
+                            <children>
+                                <AnchorPane fx:id="apCargaRight" layoutX="-67.5" layoutY="659.0" prefHeight="65.0" prefWidth="200.0" styleClass="apFooterPuestaCero" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <fx:include source="Head.fxml" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    </children>
+</AnchorPane>

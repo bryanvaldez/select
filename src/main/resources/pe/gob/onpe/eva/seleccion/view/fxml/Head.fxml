@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="80.0" minHeight="54.0" prefHeight="54.0" prefWidth="1366.0" styleClass="apHead" stylesheets="@../css/principal.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.gob.onpe.eva.seleccion.view.controller.HeadController">
+    <children><Pane prefHeight="200.0" prefWidth="600.0" styleClass="paneHeadVerde" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <ImageView fitHeight="40.0" fitWidth="73.0" layoutX="1269.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="26.0">
+            <image>
+                <Image url="@../image/new-logo-onpe.png" />
+            </image>
+        </ImageView>
+                <Label fx:id="lblNameEleccion" alignment="BOTTOM_RIGHT" layoutX="21.0" layoutY="2.0" prefHeight="40.0" prefWidth="524.0" styleClass="lblTitleEleccion" text="ELECCIONES GENERALES 2016" textAlignment="RIGHT" wrapText="true" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="550.0" AnchorPane.rightAnchor="292.0" AnchorPane.topAnchor="1.0">
+                    <padding>
+                        <Insets left="1.0" />
+                    </padding>
+                </Label>
+        <AnchorPane prefHeight="80.0" prefWidth="730.0" AnchorPane.rightAnchor="80.0">
+            <children>
+                <Label fx:id="lblNameUser" alignment="BASELINE_RIGHT" layoutX="103.0" layoutY="15.0" prefHeight="30.0" prefWidth="115.0" styleClass="lblTitleHeadPerfil" text="ADMINISTRADOR" visible="false" wrapText="true" AnchorPane.rightAnchor="81.0">
+                    <padding>
+                        <Insets left="1.0" />
+                    </padding>
+                </Label>
+                <Button fx:id="btnAdministrador" alignment="BASELINE_RIGHT" layoutX="106.0" layoutY="18.0" mnemonicParsing="false" onMouseEntered="#btnAdministradorEntered" onMouseExited="#btnAdministradorExited" prefHeight="27.0" prefWidth="152.0" styleClass="lblTitleHeadPerfil,btnAdminHead" text="ADMINISTRADOR" AnchorPane.rightAnchor="39.0">
+                    <padding>
+                        <Insets right="35.0" />
+                    </padding>
+                </Button>
+                <Pane fx:id="paneOptionsAdmin" layoutY="44.0" onMouseEntered="#paneAdminEntered" onMouseExited="#paneAdminExited" prefHeight="56.0" prefWidth="152.0" AnchorPane.rightAnchor="41.0">
+                    <children>
+                        <Pane prefHeight="26.0" prefWidth="152.0" styleClass="paneOption1">
+                            <children>
+                                <Button alignment="BASELINE_RIGHT" mnemonicParsing="false" onAction="#handleLogout" prefHeight="27.0" prefWidth="152.0" styleClass="btn_option_admin" text="CERRAR SESIÓN">
+                                    <padding>
+                                        <Insets right="33.0" />
+                                    </padding>
+                                </Button>
+                            </children>
+                        </Pane>
+                        <Pane layoutY="26.0" prefHeight="26.0" prefWidth="152.0" styleClass="paneOption2">
+                            <children>
+                                <Button alignment="BASELINE_RIGHT" mnemonicParsing="false" onAction="#handleConfig" prefHeight="27.0" prefWidth="152.0" styleClass="btn_option_admin" text="CONFIGURACIÓN">
+                                    <padding>
+                                        <Insets right="33.0" />
+                                    </padding>
+                                </Button>
+                            </children>
+                        </Pane>
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+        <Pane layoutY="45.0" prefHeight="9.0" prefWidth="542.0" styleClass="lineFooter" />
+        <Button layoutX="124.0" layoutY="16.0" mnemonicParsing="false" onAction="#handleBack" styleClass="btnRegresar" text="NACIÓN       \" />
+        <ImageView fitHeight="33.0" fitWidth="63.0" layoutX="34.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/new-eva.png" />
+            </image>
+        </ImageView>
+        <ComboBox layoutX="235.0" layoutY="16.0" prefHeight="33.0" prefWidth="161.0" promptText="Opciones" styleClass="menu-seleccion" visible="false" />
+        <Button fx:id="btnOption" alignment="BASELINE_RIGHT" layoutX="240.0" layoutY="16.0" mnemonicParsing="false" onMouseEntered="#btnOptionEntered" onMouseExited="#btnOptionExited" prefHeight="33.0" prefWidth="161.0" styleClass="lblTitleHeadPerfil,btnAdminHead,btnOptions,btn-option" text="SELECCION 25">
+            <padding>
+                <Insets right="35.0" />
+            </padding>
+        </Button>
+        <Pane fx:id="paneOptions" layoutX="240.0" layoutY="48.0" onMouseEntered="#paneOptionEntered" onMouseExited="#paneOptionExited" prefHeight="112.0" prefWidth="161.0">
+            <children>
+                <Pane prefHeight="26.0" prefWidth="161.0" styleClass="paneOption1">
+                    <children>
+                        <Button alignment="BASELINE_RIGHT" mnemonicParsing="false" onAction="#handlePCero" prefHeight="27.0" prefWidth="161.0" styleClass="btn_option_admin" text="PUESTA CERO">
+                            <padding>
+                                <Insets right="36.0" />
+                            </padding>
+                        </Button>
+                    </children>
+                </Pane>
+                <Pane layoutY="26.0" prefHeight="26.0" prefWidth="161.0" styleClass="paneOption2">
+                    <children>
+                        <Button alignment="BASELINE_RIGHT" mnemonicParsing="false" onAction="#handleSeleccion" prefHeight="27.0" prefWidth="161.0" styleClass="btn_option_admin" text="SELECCIÓN 25">
+                            <padding>
+                                <Insets right="36.0" />
+                            </padding>
+                        </Button>
+                    </children>
+                </Pane>
+                <Pane layoutY="52.0" prefHeight="26.0" prefWidth="161.0" styleClass="paneOption1">
+                    <children>
+                        <Button alignment="BASELINE_RIGHT" mnemonicParsing="false" onAction="#handleReportes" prefHeight="27.0" prefWidth="161.0" styleClass="btn_option_admin" text="REPORTES">
+                            <padding>
+                                <Insets right="36.0" />
+                            </padding>
+                        </Button>
+                    </children>
+                </Pane>
+                <Pane layoutY="78.0" prefHeight="26.0" prefWidth="161.0" styleClass="paneOption2">
+                    <children>
+                        <Button alignment="BASELINE_RIGHT" mnemonicParsing="false" onAction="#handleRespaldo" prefHeight="27.0" prefWidth="161.0" styleClass="btn_option_admin" text="RESPALDO">
+                            <padding>
+                                <Insets right="36.0" />
+                            </padding>
+                        </Button>
+                    </children>
+                    <padding>
+                        <Insets right="55.0" />
+                    </padding>
+                </Pane>
+            </children>
+        </Pane><AnchorPane focusTraversable="true" layoutY="76.0" mouseTransparent="true" opacity="0.0" prefHeight="80.0" prefWidth="1274.0" styleClass="top_bloker" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,184 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #FFFFFF;
+}
+.background_white{
+    /*    -fx-background-image: url("../image/FondoBlancoLogin.png"), url("../image/EvaLogin.png") , url("../image/imgLogin.png") , url("../image/imgSombraLogin.png");    
+        -fx-background-size: auto 113%, 23% 19%, 80px, 80px;
+        -fx-background-position:0 0,70 80, 80 575, 80 670;
+        -fx-background-repeat: no-repeat;*/
+    -fx-background-image: url("../image/FondoBlancoLogin.png"), url("../image/EvaLoginP.png") , url("../image/imgLoginP.png"), url("../image/imgONPELoginP.png");    
+    -fx-background-size: auto 113%, auto, auto, auto;
+    -fx-background-position:0 0,70 80, 80 585, 530 601;
+    -fx-background-repeat: no-repeat;
+}
+.background_linea{
+    -fx-background-image: url("../image/LineaVerdeLogin.png");
+    //-fx-background-position: 0 center;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    //-fx-background-color: #B4D6D7;
+}
+.paneGreen{
+    -fx-background-color: #067677;
+}
+.paneGris{
+    -fx-background-color: #DEDEDE;
+}
+.paneDerechaLogin{
+    -fx-background-image: url("../image/ImgDerLogin.png");
+    -fx-background-size: auto 100%;
+}
+.textFieldLogin{
+    //-fx-border-style : none; 
+    -fx-font-family: "Calibri";
+    -fx-font-size: 16px;
+    -fx-border-color : #FFFFFF;
+    -fx-background-color : #FFFFFF;
+    //-fx-text-fill: #A7A7A7;
+}
+.lbl_name_eleccion{
+    -fx-font-family: "Centabel Book";
+    -fx-font-size: 11px;
+    -fx-background-color : #FFFFFF;
+    -fx-text-fill: #868686;
+}
+.btnLogin{
+    -fx-background-color : transparent;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Calibri";
+    -fx-font-size: 18px;
+    -fx-cursor: hand;
+    -fx-background-image: url("../image/imgFlechaIngresar.png");
+    -fx-background-size: 6px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:6px center;
+}
+.paneIzqPrincipal{
+    -fx-background-image: url("../image/ImgDerPrincipal.png");
+    -fx-background-size: auto 100%;
+    -fx-background-repeat: no-repeat;    
+
+}
+.paneDerPrincipal{
+    -fx-background-image: url("../image/EvaLoginDP.png"), url("../image/imgONPEPrincipalDP.png");    
+    -fx-background-size: auto, auto;
+    -fx-background-position:720px 80px,217px 601px;
+    -fx-background-repeat: no-repeat;
+}
+.btn_principal{
+    -fx-cursor: hand;
+    -fx-pref-width: 90px;
+    -fx-pref-height: 90px;
+    -fx-font-size: 14px;
+    -fx-font-family: "Calibri";
+    -fx-border-style:none;
+    -fx-background-color: none;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size:98%;    
+    -fx-background-position: center 5;
+    //-fx-background-color : transparent;
+}
+.btn_seleccion25{
+    -fx-background-image: url("../image/imgSeleccionPrincipal.png");
+}
+.btn_seleccion25:hover{    
+    -fx-background-image: url("../image/imgSeleccionPrincipalN.png");
+}
+.btn_PuestaCero{
+    -fx-background-image: url("../image/ImgPCeroPrincipal.png");
+}
+.btn_PuestaCero:hover{    
+    -fx-background-image: url("../image/ImgPCeroPrincipalN.png");
+}
+.btnRespaldo{
+    -fx-background-image: url("../image/imgRespaldoPrincipal.png");
+}
+.btnRespaldo:hover{    
+    -fx-background-image: url("../image/imgRespaldoPrincipalN.png");
+}
+.btn_Reportes{
+    -fx-background-image: url("../image/imgReportesPrincipal.png");   
+}
+.btn_Reportes:hover{    
+    -fx-background-image: url("../image/imgReportesPrincipalN.png");
+}
+.pane_division_buttons{
+    -fx-background-image: url("../image/imgDivisionPrincipal.png");   
+    -fx-background-repeat: no-repeat;
+    -fx-background-size:80%;
+    -fx-background-position: center;
+}
+.btn_Administrador{
+    -fx-cursor: hand;
+    -fx-border-style:none;
+    -fx-background-color: none;
+    -fx-background-image: url("../image/imgFlechaAdmin.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 133px center;
+    -fx-background-size:20px;
+    -fx-font-family: "Calibri";
+    -fx-text-fill: #747474;
+
+    -fx-font-size: 14px;
+}
+.btn_Administrador:hover{
+    -fx-font-weight: bold;
+}
+.btn_AdministradorSel{
+    -fx-cursor: hand;
+    -fx-border-style:none;
+    -fx-background-color: none;
+    -fx-background-image: url("../image/imgFlechaSelAdmin.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 133px center;
+    -fx-background-size:20px;
+    -fx-font-family: "Calibri";
+    -fx-text-fill: #747474;
+
+    -fx-font-size: 14px;
+}
+.btn_AdministradorSel:hover{
+    -fx-font-weight: bold;
+}
+.btn_version{
+    -fx-cursor: hand;
+    -fx-border-style:none;
+    -fx-background-color: none;
+    -fx-font-family: "Calibri";
+    -fx-text-fill: #5DA6A7;   
+    -fx-font-size: 14px;
+}
+.btn_version:hover{
+    -fx-font-weight: bold;
+}
+.btn_option_admin{
+    -fx-cursor: hand;
+    -fx-border-style:none;  
+    -fx-background-color: none;
+    -fx-font-family: "Calibri";
+    -fx-text-fill: #828282;
+    -fx-font-size: 12px;
+}
+.btn_option_admin:hover{
+    -fx-font-weight: bold;    
+}
+.paneOption1{
+    -fx-background-color: #EAEAEA;
+}
+.paneOption2{
+    -fx-background-color: #E6E6E6;
+}
+.btnSalir{
+    -fx-background-color : #FFFFFF;
+    -fx-text-fill: #FD5F38;
+    -fx-font-family: "Calibri";
+    -fx-font-size: 18px;
+    -fx-cursor: hand;
+}
+.btnSalir:hover{
+    -fx-font-weight: bold; 
+}

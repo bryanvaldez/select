@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@../css/principal.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.gob.onpe.eva.seleccion.view.controller.EndSeleccionController">
+    <children>
+        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="1053.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox alignment="CENTER" layoutX="254.0" layoutY="144.0" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" styleClass="hboxFondo" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+                    <children>
+                        <AnchorPane prefHeight="678.0" prefWidth="1046.0" styleClass="apFinSeleccionCentral" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                            <children>
+                                <Pane layoutX="6.0" layoutY="512.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="1050.0" styleClass="apFinSelCentral" AnchorPane.rightAnchor="0.0" />
+                                <Button fx:id="btnCerrar" layoutX="977.0" layoutY="14.0" mnemonicParsing="false" onAction="#Cerrar" prefHeight="55.0" prefWidth="60.0" styleClass="btnSalir_X" text="X" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                                <Label alignment="CENTER" layoutX="486.0" layoutY="171.0" prefHeight="189.0" prefWidth="484.0" styleClass="lblFinMensaje" text="EL PROCESO DE SELECCIÓN DE LOS 25 CANDIDATOS AL CARGO DE MIEMBROS DE MESA HA FINALIZADO CON ÉXITO." textAlignment="CENTER" wrapText="true" />
+                                <Label layoutX="501.0" layoutY="537.0" prefHeight="35.0" prefWidth="225.0" styleClass="lblFinFechaHora" text="FECHA Y HORA DE INICIO:" />
+                                <Label layoutX="501.0" layoutY="570.0" prefHeight="35.0" prefWidth="225.0" styleClass="lblFinFechaHora" text="FECHA Y HORA DEL FIN:" />
+                                <Label fx:id="lblFechaInicio" layoutX="726.0" layoutY="537.0" prefHeight="35.0" prefWidth="201.0" styleClass="lblFinFechaHora" text="20/04/2015 - 16:00 HRS" />
+                                <Label fx:id="lblFechaFin" layoutX="728.0" layoutY="570.0" prefHeight="35.0" prefWidth="201.0" styleClass="lblFinFechaHora" text="20/04/2015 - 18:00 HRS" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

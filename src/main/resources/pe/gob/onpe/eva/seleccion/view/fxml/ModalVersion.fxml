@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="mensaje" stylesheets="@../css/principal.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.gob.onpe.eva.seleccion.view.controller.ModalVersionController">
+    <children>
+        <HBox alignment="CENTER" layoutY="-5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                    <children>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="882.0" styleClass="popups_in_background">
+                            <children>
+                                <Label layoutX="79.0" layoutY="59.0" prefHeight="53.0" prefWidth="580.0" styleClass="popups_in_titles" text="VERSIÓN DEL SISTEMA" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                <Label layoutX="368.0" layoutY="170.0" styleClass="lblVersion" text="VERSIÓN:" />
+                                <Button layoutX="290.0" layoutY="358.0" mnemonicParsing="false" onAction="#Aceptar" text="ACEPTAR" AnchorPane.leftAnchor="285.0" />
+                                <Button fx:id="btnImprimir" layoutX="482.0" layoutY="358.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Imprimir" text="IMPRIMIR" AnchorPane.rightAnchor="285.0" />
+                                <Label layoutX="218.0" layoutY="203.0" styleClass="lblVersion" text="CÓDIGO VERIFICA VERSIÓN:" />
+                                <Label layoutX="255.0" layoutY="235.0" styleClass="lblVersion" text="FECHA DEL SOFTWARE:" />
+                                <Label layoutX="38.0" layoutY="260.0" prefHeight="35.0" prefWidth="416.0" styleClass="lblVersion" text="FECHA DE ACTUALIZACIÓN DE LA BASE DE DATOS:" wrapText="true" />
+                                <Label fx:id="lblVersion" layoutX="462.0" layoutY="170.0" styleClass="lblVersion" text="1.0" />
+                                <Label fx:id="lblCodigoVersion" layoutX="463.0" layoutY="203.0" styleClass="lblVersion" text="AAA" />
+                                <Label fx:id="lblFecha" layoutX="462.0" layoutY="235.0" styleClass="lblVersion" text="FECHA" />
+                                <Label fx:id="lblFechaActualizacion" layoutX="462.0" layoutY="266.0" styleClass="lblVersion" text="FECHA DE ACTUALIZACIÓN" />
+                            </children>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

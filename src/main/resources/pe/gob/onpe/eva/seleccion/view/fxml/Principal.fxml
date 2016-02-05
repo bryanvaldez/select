@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minHeight="768.0" minWidth="1366.0" prefHeight="768.0" prefWidth="1366.0" styleClass="apPrincipal" stylesheets="@../css/principal.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.gob.onpe.eva.seleccion.view.controller.PrincipalController">
+    <children>
+        <HBox alignment="CENTER" layoutX="149.0" layoutY="142.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity">
+                    <children>
+                        <AnchorPane prefHeight="506.0" prefWidth="1366.0" styleClass="apVerde">
+                            <children>
+                                <ImageView fitHeight="110.0" fitWidth="151.0" layoutX="91.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/logoOnpePrincipal.png" />
+                                    </image>
+                                </ImageView><AnchorPane layoutX="26.0" layoutY="152.0" prefHeight="127.0" prefWidth="238.0" AnchorPane.leftAnchor="50.0">
+<children><Label fx:id="lblNombreEleccion" alignment="TOP_CENTER" layoutX="40.0" layoutY="155.0" prefHeight="30.0" prefWidth="256.0" styleClass="title_eleccion_main,msg_Eleccion" text="CONSULTA VECINAL PARA DEMARCACIÓN TERRITORIAL 2015 - CV 2015" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+</children></AnchorPane>
+                                <HBox alignment="CENTER" layoutY="239.0" prefHeight="590.0" prefWidth="1366.0" AnchorPane.bottomAnchor="-28.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-190.0">
+                                    <children>
+                                        <AnchorPane layoutX="275.0" layoutY="33.0" prefHeight="504.0" prefWidth="1067.0" AnchorPane.bottomAnchor="-30.0">
+                                            <children>
+                                                <AnchorPane layoutX="95.0" layoutY="80.0" prefHeight="230.0" prefWidth="300.0" styleClass="apImagen1" AnchorPane.bottomAnchor="-110.0" AnchorPane.leftAnchor="185.0">
+                                                    <children>
+                                                        <AnchorPane layoutY="119.0" prefHeight="110.0" prefWidth="110.0" styleClass="apIcono1" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0" />
+                                                    </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="334.0" layoutY="308.0" prefHeight="230.0" prefWidth="300.0" styleClass="apImagen1" AnchorPane.bottomAnchor="-110.0">
+                                                    <children>
+                                                        <AnchorPane layoutX="39.0" layoutY="-50.0" prefHeight="110.0" prefWidth="110.0" styleClass="apIcono2" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0" />
+                                                    </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="477.0" layoutY="268.0" prefHeight="230.0" prefWidth="300.0" styleClass="apImagen1" AnchorPane.bottomAnchor="-65.0">
+                                                    <children>
+                                                        <AnchorPane layoutX="41.0" layoutY="-45.0" prefHeight="110.0" prefWidth="110.0" styleClass="apIcono3" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0" />
+                                                    </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="623.0" layoutY="318.0" prefHeight="230.0" prefWidth="300.0" styleClass="apImagen1" AnchorPane.bottomAnchor="-110.0">
+                                                    <children>
+                                                        <AnchorPane layoutX="48.0" layoutY="-47.0" prefHeight="110.0" prefWidth="110.0" styleClass="apIcono4" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0" />
+                                                    </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="767.0" layoutY="308.0" prefHeight="230.0" prefWidth="300.0" styleClass="apImagen1" AnchorPane.bottomAnchor="-110.0">
+                                                    <children>
+                                                        <AnchorPane layoutX="609.0" layoutY="79.0" prefHeight="110.0" prefWidth="110.0" styleClass="apIcono5" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0" />
+                                                    </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="73.0" layoutY="-184.0" minHeight="408.0" prefHeight="595.0" prefWidth="983.0" styleClass="apImgMano" AnchorPane.bottomAnchor="0.0" />
+                                            </children>
+                                        </AnchorPane>
+                                    </children>
+                                </HBox>
+                                <AnchorPane opacity="0.74" prefHeight="23.0" prefWidth="1366.0" styleClass="apSombra" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="600.0" prefWidth="3000.0" styleClass="apBlanco">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="333.0" prefWidth="1280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                    <children>
+                                        <AnchorPane prefHeight="307.0" prefWidth="485.0">
+                                            <children>
+                                                <AnchorPane layoutX="-5.0" layoutY="155.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="179.0" prefWidth="660.0">
+                                                    <children>
+                                                        <ImageView fitHeight="147.0" fitWidth="16.0" layoutX="141.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/imgDivision.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                        <ImageView fitHeight="127.0" fitWidth="18.0" layoutX="320.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../image/imgDivision.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                        <Button alignment="BOTTOM_CENTER" contentDisplay="CENTER" ellipsisString="" layoutY="27.0" mnemonicParsing="false" onAction="#PuestaCero" styleClass="btnPuestaCero,btnMain" text="PUESTA A CERO" textAlignment="CENTER" />
+                                                        <Button alignment="BOTTOM_CENTER" ellipsisString="" layoutX="181.0" layoutY="27.0" mnemonicParsing="false" onAction="#Seleccion25" styleClass="btnSeleccion,btnMain" text="SELECCION 25" />
+                                                        <Button alignment="BOTTOM_CENTER" ellipsisString="" layoutX="357.0" layoutY="27.0" mnemonicParsing="false" onAction="#btnReportes" styleClass="btnReportes,btnMain" text="REPORTES" /><Button alignment="BOTTOM_CENTER" ellipsisString="" layoutX="528.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleRespaldo" styleClass="btnRespaldo,btnMain" text="RESPALDO" /><ImageView fitHeight="127.0" fitWidth="18.0" layoutX="491.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@../image/imgDivision.png" />
+</image>
+</ImageView>
+                                                    </children>
+                                                </AnchorPane>
+                                                <ImageView fitHeight="98.0" fitWidth="648.0" layoutX="84.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../image/LetrasPrincipal.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </children>
+                                        </AnchorPane>
+                                    </children>
+                                </HBox>
+                                <AnchorPane fx:id="apCerrarSesion" layoutX="1000.0" layoutY="270.0" onMouseEntered="#btnCerrarSesionEntered" onMouseExited="#btnCerrarSesionExited" prefHeight="104.0" prefWidth="0.0" styleClass="apCerrarSEsion" AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="15.0">
+                                    <children>
+                                        <Button layoutX="24.1875" layoutY="12.0" mnemonicParsing="false" onAction="#handleLogout" styleClass="btnCerrarSesion" text="CERRAR SESIÓN" AnchorPane.bottomAnchor="18.0" /><Button layoutX="24.1875" layoutY="1.0" mnemonicParsing="false" onAction="#handleConfig" styleClass="btnCerrarSesion" text="CONFIGURACIÓN" />
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane prefHeight="60.0" prefWidth="880.0" styleClass="apFooter" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                    <children>
+                                        <Button fx:id="btnAdministrador" alignment="CENTER" layoutX="110.0" mnemonicParsing="false" onMouseEntered="#btnAdministrarEntered" onMouseExited="#btnAdministrarExited" prefHeight="0.0" prefWidth="111.0" styleClass="btnAdministrador" text="          ADMINISTRADOR" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font name="Calibri" size="12.0" />
+                                            </font>
+                                        </Button><Button fx:id="lblVersion" alignment="BOTTOM_LEFT" layoutX="9.0" layoutY="10.0" mnemonicParsing="false" onAction="#LoadVersion" prefHeight="60.0" prefWidth="160.0" styleClass="btnVersion" text="VERSIÓN: 1.0" />
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

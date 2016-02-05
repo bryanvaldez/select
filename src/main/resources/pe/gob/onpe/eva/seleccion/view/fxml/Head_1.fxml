@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="80.0" minHeight="80.0" prefHeight="80.0" prefWidth="1280.0" styleClass="apHead" stylesheets="@../css/principal.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.gob.onpe.eva.seleccion.view.controller.HeadController">
+    <children>
+        <ImageView fitHeight="80.0" fitWidth="98.0" layoutX="1166.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-3.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="3.0">
+            <image>
+                <Image url="@../image/Logo%20ONPE.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="btnAdministrador" alignment="BOTTOM_CENTER" layoutX="1026.1875" layoutY="8.0" mnemonicParsing="false" onMouseEntered="#btnAdministradorEntered" onMouseExited="#btnAdministradorExited" prefHeight="80.0" styleClass="btnAdministradorHead" text="ADMINISTRADOR" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="0.0" />
+        <Button layoutX="131.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="80.0" prefWidth="68.0" styleClass="btnRegresar" AnchorPane.bottomAnchor="1.0" AnchorPane.topAnchor="0.0" />
+        <Label fx:id="lblModule" layoutX="190.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="title_module,title_module_puesta0" text="Selección de 25" /><AnchorPane prefHeight="80.0" prefWidth="200.0" AnchorPane.leftAnchor="430.0" AnchorPane.rightAnchor="372.0">
+<children>
+                <Label fx:id="lblNameEleccion" layoutX="10.0" prefHeight="80.0" prefWidth="454.0" styleClass="title_eleccion,msg_Eleccion" text="NOMBRE DE LA ELECCION " wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+<padding>
+<Insets left="1.0" />
+</padding></Label>
+</children></AnchorPane>
+        <AnchorPane fx:id="apCerrarSesion" layoutX="911.0" layoutY="81.0" onMouseEntered="#apCerrarSesionEntered" onMouseExited="#apCerrarSesionExited" prefHeight="114.0" prefWidth="220.0" styleClass="apCerrarSesionHead" AnchorPane.bottomAnchor="-114.0" AnchorPane.rightAnchor="149.0" AnchorPane.topAnchor="80.0">
+            <children>
+                <Button fx:id="btnCerrarSesion" layoutY="22.5" mnemonicParsing="false" onAction="#handleLogout" onMouseEntered="#apCerrarSesionEntered" styleClass="btnCerrarSesion" text="CERRAR SESIÓN" AnchorPane.rightAnchor="0.0" /><Button fx:id="btnConfiguracion" layoutY="68.5" mnemonicParsing="false" onAction="#handleConfig" onMouseEntered="#apCerrarSesionEntered" styleClass="btnCerrarSesion" text="CONFIGURACIÓN" AnchorPane.rightAnchor="0.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="apBloker" focusTraversable="true" layoutY="76.0" mouseTransparent="true" opacity="0.0" prefHeight="80.0" prefWidth="1274.0" styleClass="top_bloker" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,490 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12/04/2015, 05:49:28 PM
+    Author     : marrisueño
+*/
+ScrollPane{    
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+ScrollPane:focused {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+ScrollPane .corner{
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+/** CSS **/
+ScrollPane{
+    /*-fx-border-color:derive(gray,80%);*/
+}
+
+/* The main scrollbar CSS class of ListView */
+ScrollPane .scroll-bar:horizontal ,
+ScrollPane  .scroll-bar:vertical{
+    -fx-background-color:#FFFFFF;
+    //-fx-border-color: none;
+    -fx-border-style: none;
+    //-fx-background-color:#5D5D5D;
+    -fx-text-fill: transparent;
+}
+.scroll1{
+    -fx-background:#FFFFFF;
+}
+.lblLabel{
+    -fx-text-fill: #FFFFFF;
+}
+/* The increment and decrement button CSS class of scrollbar */
+ScrollPane .increment-button ,ScrollPane .decrement-button {
+    -fx-text-fill: transparent;
+    -fx-background-color:transparent;
+    -fx-pref-width: 10px;
+    -fx-pref-height: 15px;
+}
+
+/* The main scrollbar **track** CSS class  */
+ScrollPane .scroll-bar:horizontal .track ,
+ScrollPane .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    //-fx-border-color:derive(gray,80%);
+    -fx-border-color:none;
+    -fx-background-radius: 0em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+ScrollPane .scroll-bar:horizontal .thumb,
+ScrollPane .scroll-bar:vertical .thumb {
+    -fx-background-color:#FD6039;
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 5em;
+
+}
+
+/* ------------------------------------------------------------------------------------- */
+/** EVENT CSS **/
+/* ------------------------------------------------------------------------------------- */
+
+/* The main scrollbar **track** CSS class on event of "hover" and "pressed" */
+
+ScrollPane .scroll-bar:horizontal:hover .track ,
+ScrollPane .scroll-bar:horizontal:pressed .track ,
+ScrollPane .scroll-bar:vertical:hover .track,
+ScrollPane .scroll-bar:vertical:pressed .track{
+    -fx-background-color: derive(#FD6039,120%);
+    -fx-opacity: 0.2;
+    /*-fx-background-radius: 0em;*/
+}
+
+/* The main scrollbar **thumb** CSS class on event of "hover" and "pressed" */
+ScrollPane .scroll-bar .thumb:hover,
+ScrollPane .scroll-bar .thumb:pressed{
+    -fx-background-color: #FD6039;
+}
+
+ScrollPane .increment-button:hover ,ScrollPane .decrement-button:hover {
+    -fx-background-color:#FD6039;
+    -fx-border-color:derive(gray,80%);	
+}
+
+.apBlanco{
+    -fx-background-color: #FFFFFF;
+}
+
+.apFondo{
+    -fx-background-color: #DDDDDD;
+}
+
+.lblTitulo{
+    -fx-text-fill: #05767A;
+    -fx-font-family: "Centabel Book";
+    -fx-font-size: 30px;
+    -fx-background-color: #FFFFFF;
+}
+.lblTituloInicial{
+    -fx-font-size: 40px;
+}
+
+.apPane{
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 2 0 0 0; -fx-border-color: #7C7C7C;
+}
+
+.apPaneResultados{
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 4 0 0 0; -fx-border-color: #7C7C7C;
+}
+
+.lblSubTitulo{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #05767A;
+    -fx-font-family: "Centabel Book";
+    -fx-font-size: 30px;
+}
+.lblSubTituloInicial{
+    -fx-font-size: 40px;
+}
+
+.lblLabel{
+    -fx-text-fill: #666666;
+    -fx-font-family: "Calibri";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.cbComboBox{
+    -fx-border-style: none;
+    -fx-background-radius: 0px;
+    -fx-font-size: 12px;
+    -fx-background-insets: 0;
+    -fx-text-fill: #434343;
+    -fx-font-weight:bold;
+    -fx-background-color: #E9EBEA;
+}
+
+.cbComboBox .arrow{
+    -fx-padding: 0.1em 0.5em 0.5em 0.5em; /* 4 4 4 4 */
+    -fx-shape: "M8.124,13.625l4.125-3.375v2.889l-4.125,3.86L4,13.139V10.25L8.124,13.625z";
+    -fx-background-color: #FD6039;
+}
+
+.cbComboBox .scroll-bar:vertical{
+    -fx-background-color:transparent;
+    -fx-padding: 0 0 0 0;
+    -fx-pref-width: 10px;
+}
+.cbComboBox .scroll-bar:vertical .thumb {
+    -fx-background-color:#FD6039;
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 5em;
+    -fx-pref-width: 15px;
+
+}
+.txtField{
+    -fx-border-style: none;
+    -fx-border-radius: 0px;
+    -fx-font-size: 12px;
+    -fx-background-radius: 0px;
+    -fx-background-color: #E9EBEA;
+}
+
+.btnOption{
+    -fx-background-insets: 0;
+    -fx-background-color: #B3B3B3;
+    -fx-text-fill: #FFFFFF;    
+    -fx-cursor: hand;        
+    -fx-font-family: "Calibri";   
+    -fx-pref-width: 78px;
+    -fx-pref-height: 25px;
+    -fx-font-size: 16px;
+}
+.btnOptionDisable{
+    -fx-background-insets: 0;
+    -fx-background-color: #E5E5E5;
+    -fx-text-fill: #666666;    
+    -fx-cursor: hand;    
+    -fx-font-family: "Calibri";    
+    -fx-pref-width: 78px;
+    -fx-pref-height: 25px;
+    -fx-font-size: 16px;
+}
+
+
+.btnButtom{    
+    -fx-font-family: "Calibri";
+    -fx-background-color: #24393E;
+    -fx-font-size: 15px;
+    -fx-text-fill: #FFFFFF;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-pref-width: 250px;
+    -fx-pref-height: 30px;  
+    -fx-background-repeat: repeat-x;
+    -fx-background-position: center 26;
+    -fx-background-radius: 0;
+}
+
+.btnButtomLine{        
+    -fx-background-color: #242424;
+    -fx-cursor: hand;
+    -fx-pref-width: 150px; 
+    -fx-pref-height: 9px;
+}
+
+
+
+
+
+.apFooter{
+    -fx-background-color: #1DB1B1;        
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 20 center;
+}
+.apPaneFooter{
+    -fx-background-color: #1DB1B1;
+}
+.btnImpresion{
+    -fx-pref-width: 80px;
+    -fx-cursor: hand;
+    -fx-background-color: #1DB1B1;
+    -fx-background-image: url("../image/imgImpresionSilenciosa.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 30;    
+    -fx-background-position: center;       
+}
+.btnPDF{   
+    -fx-pref-width: 80px;
+    -fx-cursor: hand;
+    -fx-background-color: #1DB1B1;
+    -fx-background-image: url("../image/imgExportaPdf.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 30;    
+    -fx-background-position: center;
+}
+
+
+.paneGrid{
+    -fx-background-color: #999999;
+    -fx-border-color: #FFFFFF;
+    -fx-font-size:12px;
+}
+.paneHeadGrid{
+    -fx-background-color: #B3B3B3;
+}
+.lblHeadGridOscuro{
+    -fx-background-color: #FFFFFF;
+}
+.lblTitleGrid{
+    -fx-text-fill: #686868;
+    -fx-font-family: "Calibri";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.lblGrid{
+    -fx-background-color: #606261;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Calibri";
+    -fx-font-size: 15px;    
+}
+
+.lblGrid50{
+    -fx-pref-width: 50px;
+    -fx-pref-height: 25px;
+    -fx-border-color: #606261;
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 0 0 0 0;
+    -fx-text-fill: #666666;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+.lblGrid100{
+    -fx-pref-width: 148px;
+    -fx-pref-height: 25px;
+    -fx-border-color: #606261;
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 0 0 0 0;
+    -fx-text-fill: #666666;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+.lblGrid200{
+    -fx-pref-width: 248px;
+    -fx-pref-height: 25px;
+    -fx-border-color: #606261;
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 0 0 0 0;
+    -fx-text-fill: #666666;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.lblGrid300{
+    -fx-pref-width: 348px;
+    -fx-pref-height: 25px;
+    -fx-border-color: #606261;
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 0 0 0 0;
+    -fx-text-fill: #666666;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.lblGrid350{
+    -fx-pref-width: 398px;
+    -fx-pref-height: 25px;
+    -fx-border-color: #606261;
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 0 0 0 0;
+    -fx-text-fill: #666666;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.lblGrid550{
+    -fx-pref-width: 598px;
+    -fx-pref-height: 25px;
+    -fx-border-color: #606261;
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 0 0 0 0;
+    -fx-text-fill: #666666;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.lblGrid500{
+    -fx-pref-width: 548px;
+    -fx-pref-height: 25px;
+    -fx-border-color: #606261;
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 0 0 0 0;
+    -fx-text-fill: #666666;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.lblGrid600{
+    -fx-pref-width: 648px;
+    -fx-pref-height: 25px;
+    -fx-border-color: #606261;
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 0 0 0 0;
+    -fx-text-fill: #666666;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.lblGrid700{
+    -fx-pref-width: 748px;
+    -fx-pref-height: 25px;
+    -fx-border-color: #606261;
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 0 0 0 0;
+    -fx-text-fill: #666666;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.lblGrid800{
+    -fx-pref-width: 848px;
+    -fx-pref-height: 25px;
+    -fx-border-color: #606261;
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 0 0 0 0;
+    -fx-text-fill: #666666;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+.lblmessage_info{
+    -fx-padding: 5px 15px;
+    -fx-font-size: 15px;
+    -fx-background-color: #1DB1B1;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Calibri";
+}
+.btn_icon{
+    -fx-cursor: hand;       
+    -fx-background-repeat: no-repeat;    
+    -fx-pref-width: 65;
+    -fx-pref-height: 30px;
+}
+.btn_icon_print{
+    -fx-background-color: #17A5A6;
+    //-fx-background-size: 16% auto;
+    -fx-background-size: 15%;
+    -fx-background-position: 60px center;
+    -fx-background-image: url("../image/imgImpresionSilenciosa.png");
+    -fx-background-radius: 0px;
+}
+.btn_icon_pdf{
+    -fx-background-color: #149A9B;
+    //-fx-background-size: 30% auto;  
+    -fx-background-size: 25%;  
+    -fx-background-position: 60px center;
+    -fx-background-image: url("../image/new-btn-pdf.png");
+    -fx-background-radius: 0px;
+}
+
+.txtRed{
+    -fx-background-color: red;
+}
+.lblHeadGridClaro{
+    -fx-background-color: #FFFFFF;
+}
+.lblGridZebra{
+    -fx-background-color: #F5F5F5;
+}
+
+.label50{
+    -fx-pref-width: 50px;
+}
+.label90{
+    -fx-pref-width: 90px;
+}
+.label100{
+    -fx-pref-width: 100px;
+}
+.label200{
+    -fx-pref-width: 200px;
+}
+.label240{
+    -fx-pref-width: 240px;
+}
+.label250{
+    -fx-pref-width: 250px;
+}
+.label290{
+    -fx-pref-width: 290px;
+}
+.label300{
+    -fx-pref-width: 300px;
+}
+.label400{
+    -fx-pref-width: 400px;
+}
+.label540{
+    -fx-pref-width: 540px;
+}
+.label590{
+    -fx-pref-width: 590px;
+}
+.label600{
+    -fx-pref-width: 600px;
+}
+.label790{
+    -fx-pref-width: 790px;
+}
+.label800{
+    -fx-pref-width: 800px;
+}
+.label890{
+    -fx-pref-width: 890px;
+}
+
+.label100:hover,
+.label200:hover,
+.label240:hover,
+.label250:hover,
+.label290:hover,
+.label300:hover,
+.label400:hover,
+.label50:hover,
+.label540:hover,
+.label590:hover,
+.label600:hover,
+.label790:hover,
+.label800:hover,
+.label890:hover,
+.label90:hover{
+   
+}
+
+.hoverRow:hover{
+    -fx-background-color: #DDE1E2;
+    -fx-font-weight:bold;
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="768.0" minWidth="1366.0" prefHeight="768.0" prefWidth="1366.0" stylesheets="@../css/principal.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.gob.onpe.eva.seleccion.view.controller.ResumenSeleccionController">
+    <children>
+        <VBox alignment="CENTER" layoutX="26.0" prefHeight="701.0" prefWidth="1145.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox alignment="CENTER" layoutX="112.0" layoutY="112.0" prefHeight="701.0" prefWidth="1143.0" styleClass="hboxFondo" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <AnchorPane prefHeight="706.0" prefWidth="1143.0" styleClass="apResumenSel">
+                            <children>
+                                <Pane layoutX="14.0" layoutY="434.0" prefHeight="50.0" prefWidth="200.0" styleClass="paneOpcionesConfirmacion" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                    <children>
+                                        <Button fx:id="btnPrint" layoutX="88.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="77.0" styleClass="btnImpresion" />
+                                        <Button fx:id="btnExport" layoutX="173.0" mnemonicParsing="false" prefWidth="80.0" styleClass="btnPDF" />
+                                    </children>
+                                </Pane>
+                                <Pane layoutX="45.0" layoutY="72.0" prefHeight="118.0" prefWidth="966.0" styleClass="paneSupConf">
+                                    <children>
+                                        <Label fx:id="lblTitulo" layoutX="84.0" layoutY="8.0" prefHeight="103.0" prefWidth="848.0" styleClass="lblTextoConf" text="A continuación se puede observar el Resumen del Proceso de Selección de 25 Candidatos al cargo de Miembro de Mesa para las siguientes ODPE:" wrapText="true" />
+                                    </children>
+                                </Pane>
+                                <Pane layoutX="84.0" layoutY="217.0" prefHeight="64.0" prefWidth="885.0" styleClass="paneHeadGrid">
+                                    <children>
+                                        <Label alignment="CENTER" layoutX="2.0" prefHeight="64.0" prefWidth="169.0" styleClass="lblHeadGridClaro,lblTitleGrid" text="Departamento" />
+                                        <Label alignment="CENTER" layoutX="172.0" prefHeight="64.0" prefWidth="161.0" styleClass="lblHeadGridOscuro,lblTitleGrid" text="Provincia" />
+                                        <Label alignment="CENTER" layoutX="342.0" prefHeight="64.0" prefWidth="184.0" styleClass="lblHeadGridClaro,lblTitleGrid" text="Distrito" />
+                                        <Label alignment="CENTER" layoutX="522.0" prefHeight="64.0" prefWidth="209.0" styleClass="lblHeadGridOscuro,lblTitleGrid" text="ODPE" />
+                                        <Label alignment="CENTER" layoutX="732.0" prefHeight="64.0" prefWidth="122.0" styleClass="lblHeadGridClaro,lblTitleGrid" text="Cantidad de Mesas" textAlignment="CENTER" wrapText="true" />
+                                    </children>
+                                </Pane>
+                                <Button fx:id="btnCerrar" layoutX="1006.1875" layoutY="1.5" mnemonicParsing="false" prefHeight="30.0" prefWidth="19.0" styleClass="btnSalir" text="X" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                <ScrollPane fx:id="scrollPane" layoutX="84.0" layoutY="282.0" prefHeight="158.0" prefWidth="885.0">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="186.0" prefWidth="852.0">
+                                            <children>
+                                                <GridPane fx:id="gridResumen" alignment="CENTER" styleClass="gridConfirmacion">
+                                                    <columnConstraints>
+                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+                                                    </columnConstraints>
+                                                    <rowConstraints>
+                                                        <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES" />
+                                                        <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES" />
+                                                        <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES" />
+                                                        <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES" />
+                                                        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    </rowConstraints>
+                                                    <children>
+                                                        <Label prefHeight="39.0" prefWidth="171.0" styleClass="lblGrid,lblGridDep" text="Lima" />
+                                                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="184.0" styleClass="lblGrid,lblGridDis" text="Jesús María" GridPane.columnIndex="2" />
+                                                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="188.0" styleClass="lblGrid,lblGridOdp" text="ODPE 1" GridPane.columnIndex="3" />
+                                                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="169.0" styleClass="lblGrid,lblGridPro" text="Lima" GridPane.columnIndex="1" />
+                                                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="227.0" styleClass="lblGrid,lblGridCan" text="25" GridPane.columnIndex="4" />
+                                                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="171.0" styleClass="lblGrid,lblGridDep" text="Lima" GridPane.rowIndex="1" />
+                                                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="169.0" styleClass="lblGrid,lblGridPro" text="Lima" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="184.0" styleClass="lblGrid" text="San Borja" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="118.0" styleClass="lblGrid,lblGridOdp" text="ODPE 2" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="227.0" styleClass="lblGrid,lblGridCan" text="25" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="171.0" styleClass="lblGrid,lblGridDep" text="Lima" GridPane.rowIndex="2" />
+                                                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="169.0" styleClass="lblGrid,lblGridPro" text="Lima" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="184.0" styleClass="lblGrid" text="La Molina" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="118.0" styleClass="lblGrid,lblGridOdp" text="ODPE 3" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="227.0" styleClass="lblGrid,lblGridCan" text="25" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="171.0" styleClass="lblGrid,lblGridDep" text="Lima" GridPane.rowIndex="3" />
+                                                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="169.0" styleClass="lblGrid,lblGridPro" text="Lima" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="184.0" styleClass="lblGrid" text="San Asidro" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="118.0" styleClass="lblGrid,lblGridOdp" text="ODPE 4" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="227.0" styleClass="lblGrid,lblGridCan" text="25" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                                    </children>
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </GridPane>
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </ScrollPane><Label fx:id="lblExport" layoutX="155.0" layoutY="580.0" styleClass="lblmessage_info_popup" text="Exportando..." /><Label fx:id="lblPrint" layoutX="67.0" layoutY="580.0" styleClass="lblmessage_info_popup" text="Imprimiendo..." />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

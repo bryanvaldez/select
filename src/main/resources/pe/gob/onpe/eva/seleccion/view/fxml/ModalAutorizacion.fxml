@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apAut" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="mensaje" stylesheets="@../css/principal.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.gob.onpe.eva.seleccion.view.controller.ModalAutorizacionController">
+    <children>
+        <HBox alignment="CENTER" layoutX="131.0" layoutY="157.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                    <children>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" styleClass="popups_in_background">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <children>
+                                <Label layoutX="224.0" layoutY="63.0" styleClass="popups_in_titles" text="AUTORIZACIÓN" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                <Label layoutX="206.0" layoutY="186.0" styleClass="popups_in_text" text="CLAVE:" />
+                                <Button fx:id="btnAceptarPass" layoutX="225.0" layoutY="305.0" mnemonicParsing="false" onAction="#Aceptar" styleClass="popup_btn" text="ACEPTAR" />
+                                <Button layoutX="436.0" layoutY="305.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Cancelar" styleClass="popup_btn" text="CANCELAR" />
+                                <PasswordField fx:id="txtClave" layoutX="308.0" layoutY="181.0" onAction="#clavePressEnter" prefHeight="44.0" prefWidth="286.0" promptText="INGRESE SU CLAVE">
+<font>
+<Font size="10.0" />
+</font></PasswordField>
+                                <Label fx:id="lblError" layoutX="308.0" layoutY="238.0" styleClass="popups_in_text_error" text="Clave incorrecta!" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

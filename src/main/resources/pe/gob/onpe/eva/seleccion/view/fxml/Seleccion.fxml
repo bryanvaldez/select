@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minHeight="768.0" minWidth="1366.0" prefHeight="768.0" prefWidth="1366.0" styleClass="apBlanco" stylesheets="@../css/principal.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.gob.onpe.eva.seleccion.view.controller.SeleccionController">
+    <children>
+        <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="2000.0" prefWidth="200.0">
+                    <children>
+                        <AnchorPane prefHeight="688.0" prefWidth="500.0" styleClass="apSeleccionIzq">
+                            <children>
+                                <Pane layoutY="100.0" prefHeight="49.0" prefWidth="200.0" styleClass="paneSubTitle" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                <Pane layoutX="-67.5" layoutY="545.0" prefHeight="70.0" prefWidth="200.0" styleClass="paneSeleccionDelante" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="688.0" prefWidth="1367.0" styleClass="apSeleccionCentral">
+                            <children>
+                                <Label layoutX="28.0" layoutY="25.0" prefHeight="74.0" prefWidth="576.0" styleClass="lblTitulo_pcero" text="PROCESO DE SELECCIÓN" />
+                                <Pane layoutY="100.0" prefHeight="49.0" prefWidth="1039.0" styleClass="paneSubTitle" AnchorPane.leftAnchor="0.0">
+                                    <children>
+                                        <Label layoutX="29.0" layoutY="7.0" prefHeight="35.0" prefWidth="530.0" styleClass="lblCarga,lblConfirmacionpcero" text="de los 25 Candidatos al Cargo de Miembros de Mesa" />
+                                    </children>
+                                </Pane>
+                                <VBox alignment="CENTER" prefHeight="393.0" prefWidth="1288.0" AnchorPane.bottomAnchor="115.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="180.0">
+                                    <children>
+                                        <AnchorPane prefHeight="390.0" prefWidth="1184.0">
+                                            <children>
+                                                <Pane layoutX="366.0" layoutY="331.0" prefHeight="35.0" prefWidth="330.0" styleClass="paneSubCuadro" />
+                                                <Pane fx:id="apAsignacionPesos" layoutX="399.0" layoutY="110.0" prefHeight="228.0" prefWidth="265.0" styleClass="paneAsignacionPesos" />
+                                                <Pane fx:id="apVerde1" layoutX="399.0" layoutY="338.0" prefHeight="0.0" prefWidth="265.0" styleClass="paneVerde" /><Pane fx:id="apVerdeAsignacion" layoutX="399.0" layoutY="110.0" prefHeight="240.0" prefWidth="265.0" styleClass="paneVerde" />
+                                                <Pane layoutX="704.0" layoutY="285.0" prefHeight="35.0" prefWidth="330.0" styleClass="paneSubCuadro" />
+                                                <Pane fx:id="apSeleccionAleatoria" layoutX="736.0" layoutY="60.0" prefHeight="229.0" prefWidth="268.0" styleClass="paneAsignacionPesos" />
+                                                <Pane fx:id="apVerde2" layoutX="736.0" layoutY="290.0" prefHeight="0.0" prefWidth="268.0" styleClass="paneVerde" /><Pane fx:id="apVerdeSeleccion" layoutX="736.0" layoutY="60.0" prefHeight="229.0" prefWidth="268.0" styleClass="paneVerde" />
+                                                <Pane layoutX="1064.0" layoutY="240.0" prefHeight="35.0" prefWidth="224.0" styleClass="paneSubCuadro" />
+                                                <Pane layoutX="1075.0" layoutY="50.0" prefHeight="239.0" prefWidth="202.0" styleClass="panePrint" />
+                                                <ImageView fitHeight="74.0" fitWidth="65.0" layoutX="1023.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../image/imgFlechaNegra.png" />
+                                                    </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="74.0" fitWidth="65.0" layoutX="683.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../image/imgFlechaNegra.png" />
+                                                    </image>
+                                                </ImageView><Pane layoutX="715.0" layoutY="289.0" prefHeight="15.0" prefWidth="312.0" styleClass="paneSubCuadro" /><Pane layoutX="399.0" layoutY="108.0" prefHeight="230.0" prefWidth="265.0">
+<children>
+<Pane layoutX="35.0" layoutY="32.0" prefHeight="111.0" prefWidth="195.0" styleClass="paneBlanco">
+<children>
+<Label alignment="CENTER" layoutX="19.0" layoutY="15.0" prefHeight="81.0" prefWidth="163.0" styleClass="lblSeleccionNaranja" text="ASIGNACIÓN DE PESOS" textAlignment="CENTER" wrapText="true" />
+</children>
+</Pane>
+<Pane layoutX="35.0" layoutY="155.0" prefHeight="57.0" prefWidth="195.0" styleClass="paneBlanco">
+<children>
+<Label fx:id="lblCargaAsignacion" alignment="CENTER" layoutX="24.0" layoutY="11.0" prefHeight="35.0" prefWidth="151.0" styleClass="lblPorcent" text="0 %">
+<font>
+<Font name="System Italic" size="12.0" />
+</font>
+</Label>
+</children>
+</Pane><Pane layoutX="-29.0" layoutY="230.0" prefHeight="15.0" prefWidth="320.0" styleClass="paneSubCuadro" />
+</children>
+</Pane><Pane layoutX="736.0" layoutY="59.0" prefHeight="230.0" prefWidth="265.0">
+<children>
+<Pane layoutX="35.0" layoutY="29.0" prefHeight="111.0" prefWidth="195.0" styleClass="paneBlanco">
+<children>
+<Label alignment="CENTER" layoutX="20.0" layoutY="15.0" prefHeight="81.0" prefWidth="163.0" styleClass="lblSeleccionNaranja" text="SELECCIÓN ALEATORIA" textAlignment="CENTER" wrapText="true" />
+</children>
+</Pane>
+<Pane layoutX="35.0" layoutY="151.0" prefHeight="57.0" prefWidth="195.0" styleClass="paneBlanco">
+<children>
+<Label fx:id="lblCargaSeleccion" alignment="CENTER" layoutX="27.0" layoutY="10.5" prefHeight="35.0" prefWidth="151.0" styleClass="lblPorcent" text="0 %" />
+</children>
+</Pane>
+</children>
+</Pane><Label layoutX="398.0" layoutY="333.0" prefHeight="35.0" prefWidth="215.0" styleClass="lblCarga,lblFooterCarga" text="Electores Asignados:" /><Label layoutX="735.0" layoutY="285.0" prefHeight="35.0" prefWidth="215.0" styleClass="lblCarga,lblFooterCarga" text="Mesas Procesadas:" /><Label fx:id="lblElectores" alignment="CENTER" layoutX="571.0" layoutY="333.0" prefHeight="35.0" prefWidth="111.0" styleClass="lblCarga,lblFooterCarga" text="0" textAlignment="RIGHT" /><Label fx:id="lblMesas" alignment="CENTER" layoutX="920.0" layoutY="287.0" prefHeight="35.0" prefWidth="81.0" styleClass="lblCarga,lblFooterCarga" text="0" textAlignment="RIGHT" /><Pane layoutX="20.0" layoutY="5.0" prefHeight="177.0" prefWidth="330.0" styleClass="paneHistory">
+<children><Label layoutX="27.0048828125" layoutY="-12.5" styleClass="lblHistory" text="ASIGNACIÓN DE PESOS" /><CheckBox fx:id="chN1" disable="true" layoutX="44.076171875" layoutY="13.5" mnemonicParsing="false" styleClass="checkCarga" text="N1: GRADO DE INSTRUCCIÓN" /><CheckBox fx:id="chP" disable="true" layoutX="44.0" layoutY="139.0" mnemonicParsing="false" styleClass="checkCarga" text="PRIORIDAD   P=N1+N2+N3" /><CheckBox fx:id="chN2" disable="true" layoutX="44.0" layoutY="89.0" mnemonicParsing="false" styleClass="checkCarga" text="N2: # DE VECES COMO MM" /><CheckBox fx:id="chN3" disable="true" layoutX="44.0" layoutY="115.0" mnemonicParsing="false" styleClass="checkCarga" text="N3: RANGO DE EDAD" /><Label fx:id="lblN1" disable="true" layoutX="84.0" layoutY="30.0" prefHeight="57.0" prefWidth="81.0" styleClass="checkCarga" text="&gt;=70 años Discapacidad &lt; 70 años" wrapText="true" /><Pane fx:id="imgCh1" layoutX="41.0" layoutY="8.0" prefHeight="23.0" prefWidth="24.0" styleClass="checkCarga1" /><Pane fx:id="imgCh2" layoutX="41.0" layoutY="83.5" prefHeight="23.0" prefWidth="24.0" styleClass="checkCarga1" /><Pane fx:id="imgCh3" layoutX="41.0" layoutY="110.0" prefHeight="23.0" prefWidth="24.0" styleClass="checkCarga1" /><Pane fx:id="imgCh4" layoutX="41.0" layoutY="134.5" prefHeight="23.0" prefWidth="24.0" styleClass="checkCarga1" />
+</children></Pane><Pane layoutX="20.0" layoutY="176.0" prefHeight="213.0" prefWidth="330.0" styleClass="paneHistory">
+<children><Label layoutX="28.0" layoutY="-11.0" styleClass="lblHistory" text="SELECCIÓN ALEATORIA" /><CheckBox fx:id="chAleatorio1" disable="true" layoutX="43.7890625" layoutY="15.5" mnemonicParsing="false" styleClass="checkCarga" text="ORDENANDO SEGÚN P" /><CheckBox fx:id="chAleatorio2" disable="true" layoutX="44.0" layoutY="41.0" mnemonicParsing="false" styleClass="checkCarga" text="EXCLUYENDO ELECTORES" /><CheckBox fx:id="chAleatorio3" disable="true" layoutX="44.0" layoutY="67.0" mnemonicParsing="false" styleClass="checkCarga" text="AGRUPANDO SEGÚN P" /><CheckBox fx:id="chAleatorio4" disable="true" layoutX="44.0" layoutY="93.0" mnemonicParsing="false" styleClass="checkCarga" text="ASIGNANDO # ALEATORIO" /><CheckBox fx:id="chAleatorio5" disable="true" layoutX="44.0" layoutY="119.0" mnemonicParsing="false" styleClass="checkCarga" text="ORDENANDO POR P Y # ALEATORIO" /><CheckBox fx:id="chAleatorio6" disable="true" layoutX="44.0" layoutY="145.0" mnemonicParsing="false" styleClass="checkCarga" text="SELECCIONANDO LOS 25 CANDIDATOS" /><CheckBox fx:id="chAleatorio7" disable="true" layoutX="44.0" layoutY="171.0" mnemonicParsing="false" styleClass="checkCarga" text="ASIGNANDO BOLOS" /><Pane fx:id="imgCh5" layoutX="41.0" layoutY="10.5" prefHeight="23.0" prefWidth="24.0" styleClass="checkCarga1" /><Pane fx:id="imgCh6" layoutX="41.0" layoutY="36.0" prefHeight="23.0" prefWidth="24.0" styleClass="checkCarga1" /><Pane fx:id="imgCh7" layoutX="41.0" layoutY="62.0" prefHeight="23.0" prefWidth="24.0" styleClass="checkCarga1" /><Pane fx:id="imgCh8" layoutX="41.0" layoutY="88.0" prefHeight="23.0" prefWidth="24.0" styleClass="checkCarga1" /><Pane fx:id="imgCh9" layoutX="41.0" layoutY="114.5" prefHeight="23.0" prefWidth="24.0" styleClass="checkCarga1" /><Pane fx:id="imgCh10" layoutX="41.0" layoutY="140.0" prefHeight="23.0" prefWidth="24.0" styleClass="checkCarga1" /><Pane fx:id="imgCh11" layoutX="41.0" layoutY="166.0" prefHeight="23.0" prefWidth="24.0" styleClass="checkCarga1" />
+</children></Pane><Pane layoutX="31.0" layoutY="7.0" prefHeight="370.0" prefWidth="305.0" />
+                                            </children>
+                                        </AnchorPane>
+                                    </children>
+                                </VBox>
+                                <Pane layoutX="585.0" layoutY="593.0" prefHeight="70.0" prefWidth="1150.0" styleClass="paneSeleccionDelante" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+<children>
+                                <Pane fx:id="apLoadCargaSel" layoutX="14.5" prefHeight="70.0" prefWidth="65.0" styleClass="paneSeleccionAtras" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1085.0" />
+</children>
+                                </Pane>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="688.0" prefWidth="500.0" styleClass="apSeleccionDer">
+                            <children>
+                                <Pane layoutY="602.0" prefHeight="70.0" prefWidth="200.0" styleClass="paneSeleccionDelante" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <fx:include source="Head.fxml" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    </children>
+</AnchorPane>

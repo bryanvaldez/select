@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="768.0" minWidth="1366.0" prefHeight="768.0" prefWidth="1366.0" styleClass="mainFxmlClass" stylesheets="@../css/login1.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.gob.onpe.eva.seleccion.view.controller.Login1Controller">
+    <children><Pane prefHeight="768.0" prefWidth="1128.0" styleClass="paneIzqPrincipal" /><Pane fx:id="paneImgDerecha" layoutX="317.0" prefHeight="768.0" prefWidth="1049.0" styleClass="paneDerechaLogin" /><Pane fx:id="paneBlancoIzq" prefHeight="768.0" prefWidth="1128.0" styleClass="background_white">
+<children><Pane layoutX="74.0" layoutY="456.0" prefHeight="42.0" prefWidth="757.0" styleClass="paneGreen">
+<children><Button alignment="BASELINE_RIGHT" layoutX="3.0" layoutY="4.0" mnemonicParsing="false" onAction="#validateUsuario" prefHeight="34.0" prefWidth="104.0" styleClass="btnLogin" text="INGRESAR" />
+</children></Pane><Pane layoutX="74.0" layoutY="503.0" prefHeight="4.0" prefWidth="767.0" styleClass="paneGris" /><Label fx:id="lblEleccion" alignment="BOTTOM_RIGHT" layoutX="280.0" layoutY="628.0" prefHeight="60.0" prefWidth="435.0" styleClass="lbl_name_eleccion" text="Elecciones Generales 2016" textAlignment="RIGHT" wrapText="true" /><Pane layoutX="74.0" layoutY="403.0" prefHeight="2.0" prefWidth="656.0" styleClass="paneGreen" /><Pane layoutX="74.0" layoutY="330.0" prefHeight="2.0" prefWidth="580.0" styleClass="paneGreen" /><TextField fx:id="txtUsuario" layoutX="100.0" layoutY="296.0" onAction="#UserEnterPressed" prefHeight="25.0" prefWidth="253.0" promptText="Usuario" styleClass="textFieldLogin" /><ImageView fitHeight="20.0" fitWidth="23.0" layoutX="79.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@../image/imgLogoUser.png" />
+</image></ImageView><ImageView fitHeight="20.0" fitWidth="23.0" layoutX="79.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@../image/imgLogoPass.png" />
+</image>
+</ImageView><PasswordField fx:id="txtPassword" layoutX="100.0" layoutY="368.5" onAction="#PasswordEnterPressed" prefWidth="253.0" promptText="Contraseña" styleClass="password-field,textFieldLogin" /><Button alignment="CENTER" layoutX="79.0" layoutY="662.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="34.0" prefWidth="74.0" styleClass="btnSalir" text="SALIR" />
+</children></Pane><ImageView fx:id="imgLineGreen" fitHeight="853.0" fitWidth="1029.0" layoutX="249.0" layoutY="-43.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@../image/LineaVerdeLogin.png" />
+</image></ImageView><Pane fx:id="paneDerechaPrincipal" layoutX="317.0" prefHeight="768.0" prefWidth="1049.0" styleClass="paneDerPrincipal" visible="false">
+<children><Button alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="859.0" layoutY="289.0" mnemonicParsing="false" onAction="#handleSeleccion25" styleClass="btn_principal,btn_seleccion25" textAlignment="CENTER" /><Button layoutX="639.0" layoutY="289.0" mnemonicParsing="false" onAction="#handlePuestaCero" styleClass="btn_principal,btn_PuestaCero" /><Button layoutX="859.0" layoutY="439.0" mnemonicParsing="false" onAction="#handleRespaldo" styleClass="btn_principal,btnRespaldo" /><Button layoutX="639.0" layoutY="439.0" mnemonicParsing="false" onAction="#handleReportes" styleClass="btn_principal,btn_Reportes" /><Pane layoutX="779.0" layoutY="289.0" prefHeight="90.0" prefWidth="35.0" styleClass="pane_division_buttons" /><Pane layoutX="779.0" layoutY="439.0" prefHeight="102.0" prefWidth="35.0" styleClass="pane_division_buttons" /><Button fx:id="lblVersion" alignment="BASELINE_RIGHT" layoutX="802.0" layoutY="634.0" mnemonicParsing="false" onAction="#LoadVersion" prefHeight="25.0" prefWidth="115.0" styleClass="btn_version" text="VERSIÓN">
+<padding>
+<Insets right="1.0" />
+</padding></Button><Button fx:id="btnAdministrador" alignment="BASELINE_RIGHT" contentDisplay="CENTER" layoutX="794.0" layoutY="659.0" mnemonicParsing="false" onMouseEntered="#btnAdminEntered" onMouseExited="#btnAdminExited" prefHeight="27.0" prefWidth="154.0" styleClass="btn_Administrador" text="ADMINISTRADOR">
+<padding>
+<Insets right="30.0" />
+</padding></Button><Label fx:id="lblEleccion1" alignment="BOTTOM_LEFT" layoutX="350.0" layoutY="628.0" prefHeight="60.0" prefWidth="435.0" styleClass="lbl_name_eleccion" text="Elecciones Generales 2016" wrapText="true" /><Pane fx:id="paneOptionsAdmin" layoutX="995.0" layoutY="604.0" onMouseEntered="#paneAdminEntered" onMouseExited="#paneAdminExited" prefHeight="56.0" prefWidth="152.0">
+<children><Pane prefHeight="26.0" prefWidth="152.0" styleClass="paneOption1">
+<children><Button alignment="BASELINE_RIGHT" mnemonicParsing="false" onAction="#handleLogout" prefHeight="27.0" prefWidth="152.0" styleClass="btn_option_admin" text="CERRAR SESIÓN">
+<padding>
+<Insets right="31.0" />
+</padding></Button>
+</children></Pane><Pane layoutY="26.0" prefHeight="26.0" prefWidth="152.0" styleClass="paneOption2">
+<children><Button alignment="BASELINE_RIGHT" mnemonicParsing="false" onAction="#handleConfig" prefHeight="27.0" prefWidth="152.0" styleClass="btn_option_admin" text="CONFIGURACIÓN">
+<padding>
+<Insets right="31.0" />
+</padding></Button>
+</children></Pane>
+</children></Pane>
+</children></Pane>
+    </children>
+</AnchorPane>

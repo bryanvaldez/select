@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="apBlanco" stylesheets="@../css/principal.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.gob.onpe.eva.seleccion.view.controller.ConfigController">
+    <children>
+        <HBox alignment="CENTER" layoutX="372.0" layoutY="257.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity">
+                    <children>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0">
+                            <children>
+                                <Pane layoutX="6.0" prefHeight="100.0" prefWidth="200.0" styleClass="apVerde_config" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <children>
+                                        <Label alignment="CENTER" layoutX="115.0" layoutY="12.0" prefHeight="77.0" prefWidth="727.0" styleClass="tile_config" text="CONFIGURACIÓN" />
+                                        <Button layoutX="906.0" layoutY="9.0" mnemonicParsing="false" onAction="#Cancelar" prefHeight="88.0" prefWidth="83.0" styleClass="btn_salir_config" text="X" />
+                                    </children>
+                                </Pane>
+                                <Pane layoutX="25.0" layoutY="113.0" prefHeight="525.0" prefWidth="961.0" styleClass="paneHistory" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="130.0">
+                                    <children><Line endX="1000.0" strokeWidth="0.8" />
+                                        <Label fx:id="lblFechas" disable="true" layoutX="719.0" layoutY="-14.0" styleClass="lbl_title_tab,lbl_tab_config" text="FECHAS" visible="false" />
+                                        <Label fx:id="lblEtiquetas" layoutX="117.0048828125" layoutY="-14.0" styleClass="lbl_title_tab,lbl_tab_config" text="ETIQUETAS" />
+                                        <Label fx:id="lblCarpetas" layoutX="508.0" layoutY="-14.0" styleClass="lbl_title_tab,lbl_tab_config" text="CARPETAS E IMPRESIÓN" />
+                                        <AnchorPane fx:id="apEtiquetas" layoutX="34.0" layoutY="20.0" prefHeight="414.0" prefWidth="929.0" styleClass="apEtiquetas">
+                                            <children>
+                                                <Label layoutX="9.0" layoutY="21.0" styleClass="lbl_name_etiquetas" text="Ámbito:" />
+                                                <Label layoutX="487.0" layoutY="21.0" styleClass="lbl_name_etiquetas" text="Departamento:" />
+                                                <Label layoutX="487.0" layoutY="63.0" styleClass="lbl_name_etiquetas" text="Provincia:" />
+                                                <Label layoutX="487.0" layoutY="105.0" styleClass="lbl_name_etiquetas" text="Distrito:" />
+                                                <Label layoutX="9.0" layoutY="63.0" styleClass="lbl_name_etiquetas" text="Dpto - Prov - Dist:" />
+                                                <TextField fx:id="txtODPE" layoutX="161.0" layoutY="14.0" prefHeight="228.0" prefWidth="275.0" styleClass="text_etiquetas" />
+                                                <TextField fx:id="txtDptoProvDist" layoutX="161.0" layoutY="55.0" prefHeight="228.0" prefWidth="275.0" styleClass="text_etiquetas" />
+                                                <TextField fx:id="txtDpto" layoutX="636.0" layoutY="14.0" prefHeight="228.0" prefWidth="280.0" styleClass="text_etiquetas" AnchorPane.rightAnchor="9.0" />
+                                                <TextField fx:id="txtProv" layoutX="636.0" layoutY="56.0" prefHeight="228.0" prefWidth="280.0" styleClass="text_etiquetas" AnchorPane.rightAnchor="9.0" />
+                                                <TextField fx:id="txtDist" layoutX="636.0" layoutY="98.0" prefHeight="37.0" prefWidth="280.0" styleClass="text_etiquetas" AnchorPane.rightAnchor="9.0" />
+                                                <Label layoutX="9.0" layoutY="154.0" styleClass="lbl_name_etiquetas" text="NOMBRE DEL PROCESO (PANTALLA):" />
+                                                <Label layoutX="9.0" layoutY="284.0" styleClass="lbl_name_etiquetas" text="NOMBRE DEL PROCESO (REPORTE):" />
+                                                <TextArea fx:id="textNombreProcesoP" layoutX="9.0" layoutY="183.0" prefHeight="95.0" prefWidth="890.0" styleClass="text_area_etiquetas" wrapText="true" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" />
+                                                <TextArea fx:id="textNombreProcesoR" layoutX="9.0" layoutY="319.0" prefHeight="95.0" prefWidth="890.0" styleClass="text_area_etiquetas" wrapText="true" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" />
+                                            </children>
+                                        </AnchorPane>
+                                        <AnchorPane fx:id="apCarpetas" layoutX="34.0" layoutY="20.0" prefHeight="414.0" prefWidth="929.0" styleClass="apCarpetas">
+                                            <children>
+                                                <Label layoutX="87.0" layoutY="14.0" styleClass="lbl_title_tab,lbl_grupo" text="CARPETAS" />
+                                                <TextField fx:id="txtPDF" editable="false" layoutX="99.0" layoutY="83.0" prefHeight="44.0" prefWidth="689.0" styleClass="text_etiquetas">
+                                                    <cursor>
+                                                        <Cursor fx:constant="DEFAULT" />
+                                                    </cursor>
+                                                </TextField>
+                                                <Label layoutX="99.0" layoutY="55.0" styleClass="lbl_ruta" text="Descarga de PDFs:" />
+                                                <Label layoutX="99.0" layoutY="130.0" styleClass="lbl_ruta" text="Copia de Respaldo:" />
+                                                <TextField fx:id="txtRespaldo" editable="false" layoutX="99.0" layoutY="158.0" prefHeight="44.0" prefWidth="689.0" styleClass="text_etiquetas">
+                                                    <cursor>
+                                                        <Cursor fx:constant="DEFAULT" />
+                                                    </cursor>
+                                                </TextField>
+                                                <Label layoutX="87.0" layoutY="260.0" styleClass="lbl_title_tab,lbl_grupo" text="IMPRESIÓN" />
+                                                <Label layoutX="99.0" layoutY="309.0" styleClass="lbl_ruta" text="Cantidad de copias que desea imprimir:" />
+                                                <TextField fx:id="txtPagina" alignment="CENTER" editable="false" layoutX="678.0" layoutY="285.0" prefHeight="42.0" prefWidth="53.0" styleClass="txtPaginado" text="1" />
+                                                <Button layoutX="640.0" layoutY="285.0" mnemonicParsing="false" onAction="#menor" prefWidth="47.0" styleClass="btnPaginado" text="&lt;" />
+                                                <Button layoutX="774.0" layoutY="285.0" mnemonicParsing="false" onAction="#mayor" prefWidth="47.0" styleClass="btnPaginado" text="&gt;" />
+                                                <Button layoutX="781.0" layoutY="158.0" mnemonicParsing="false" onAction="#btnSearchRespaldo" styleClass="btnSearch" />
+                                                <Button layoutX="781.0" layoutY="83.0" mnemonicParsing="false" onAction="#btnSearchPDF" prefHeight="37.0" styleClass="btnSearch" />
+                                            </children>
+                                        </AnchorPane>
+                                        <AnchorPane fx:id="apFechas" layoutX="34.0" layoutY="20.0" prefHeight="414.0" prefWidth="929.0" styleClass="apEtiquetas" visible="false">
+                                            <children>
+                                                <Label layoutX="9.0" layoutY="130.0" styleClass="lbl_name_etiquetas" text="TACHAS" />
+                                                <Label layoutX="9.0" layoutY="200.0" styleClass="lbl_name_etiquetas" text="EXCUSAS Y JUSTIFICACIONES" />
+                                                <DatePicker fx:id="dpTachasInicio" editable="false" layoutX="354.0" layoutY="130.0" styleClass="search-text" />
+                                                <DatePicker fx:id="dpTachasFin" editable="false" layoutX="648.0" layoutY="130.0" styleClass="search-text" />
+                                                <DatePicker fx:id="dpExcusasInicio" editable="false" layoutX="354.0" layoutY="200.0" styleClass="search-text" />
+                                                <DatePicker fx:id="dpExcusasFin" editable="false" layoutX="648.0" layoutY="200.0" styleClass="search-text" />
+                                                <Label layoutX="415.0" layoutY="70.0" styleClass="lbl_name_etiquetas" text="FECHA INICIO" />
+                                                <Label layoutX="712.0" layoutY="70.0" styleClass="lbl_name_etiquetas" text="FECHA FIN" />
+                                            </children>
+                                        </AnchorPane>
+                                    </children>
+                                </Pane><Pane layoutX="42.0" layoutY="593.0" prefHeight="39.0" prefWidth="911.0" styleClass="apVerde_config" />
+                                <Button alignment="CENTER" layoutX="114.0" layoutY="572.0" mnemonicParsing="false" onAction="#RestaurarValues" styleClass="btnRestaurar" text="RESTAURAR" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="614.0" />
+                                <Button fx:id="btnGuardar" layoutX="420.0" layoutY="577.0" mnemonicParsing="false" onAction="#Guardar" styleClass="btnGuardar" text="GUARDAR" AnchorPane.bottomAnchor="19.0" AnchorPane.rightAnchor="47.0" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
